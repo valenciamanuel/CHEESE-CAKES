@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylereseñas.css">
+    <title>Agregar Reseña</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Agregar Reseña</h1>
+    </header>
+        <a href="home.html"><button>Volver</button></a>
+    <main>
+        <form action="guardar_resena.php" method="POST">
+            <fieldset>
+                <div class="section">
+                    <label>ID Reseña</label>
+                    <br>
+                    <input type="number" name="id_resena" placeholder="ID reseña" required>
+                </div>
+                <div class="section">
+                    <label>ID Artículo</label>
+                    <br>
+                    <input type="number" name="id_articulo" placeholder="ID artículo" required>
+                </div>
+                <div class="section">
+                    <label>ID Vendedor</label>
+                    <br>
+                    <input type="number" name="id_vendedor" placeholder="ID vendedor" required>
+                </div>
+                <div class="section">
+                    <label>Calificación</label>
+                    <br>
+                    <input type="number" name="calificacion" placeholder="Calificación" required min="1" max="5">
+                </div>
+                <div class="section">
+                    <label>Descripción</label>
+                    <br>
+                    <textarea name="descripcion" placeholder="Escriba la Descripción"></textarea>
+                </div>
+                <div class="section">
+                    <label>Fecha</label>
+                    <br>
+                    <input type="date" name="fecha" required>
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>

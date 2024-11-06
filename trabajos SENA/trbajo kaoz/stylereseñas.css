@@ -1,0 +1,41 @@
+html{
+    box-sizing: border-box; 
+    font-size: 62,5%;
+}
+
+.titulo{
+    text-align: center;
+    background:conic-gradient(at center top, rgb(254, 240, 138), rgb(167, 243, 208), rgb(254, 240, 138));
+}
+
+form{
+    text-align: center;
+}
+form input{
+    margin-bottom: 2rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(75, 85, 99));
+}
+
+form,label{
+    color: white;
+}
+
+
+button{
+    background: conic-gradient(at center top, rgb(254, 240, 138), rgb(167, 243, 208), rgb(254, 240, 138));
+    border-radius: 1rem;
+}
+
+.style2{
+    text-align: center;
+    font-size: 3rem;
+    background: conic-gradient(at center top, rgb(254, 240, 138), rgb(167, 243, 208), rgb(254, 240, 138));
+}

@@ -1,0 +1,80 @@
+html, body {
+    font-size: 62.5%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    zoom: 80%;
+}
+
+body {
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #6F4E37, #FFC0CB, #F5F5DC);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.debilidades, .oportunidades {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.debilidades {
+    float: left;
+    margin-left: 2%;
+}
+
+.oportunidades {
+    float: right;
+    margin-right: 2%;
+}
+
+.debilidades img, .oportunidades img {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}
+
+/* Clear the float after the images */
+footer {
+    clear: both;
+    font-size: 5rem;
+    text-align: right;
+    margin-right: 5rem;
+    padding: 20rem;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80rem;
+    height: 80rem;
+    padding: 2rem;
+    margin-top: 10rem;
+}
+
+
+.perfil1, .perfil2 {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.perfil1{
+    float: left;
+    margin-left: 2%;
+}
+
+.perfil2 {
+    float: right;
+    margin-right: 2%;
+}
+
+.perfil1 img, .perfil2 img {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+}

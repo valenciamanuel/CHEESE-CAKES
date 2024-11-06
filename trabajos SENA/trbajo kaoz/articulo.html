@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylearticulo.css">
+    <title>Mercado Campesino</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Agregar Articulo</h1>
+    </header>
+        <a href="home.html"><button>Volver</button></a>
+    <main>
+        <form action="guardar_articulo.php" method="POST">
+            <fieldset>
+                <div class="section">
+                    <label>ID vendedor</label>
+                    <br>
+                    <input type="number" name="id_vendedor" placeholder="ID vendedor" required>
+                </div>
+                <div class="section">
+                    <label>Nombre</label>
+                    <br>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="section">
+                    <label>Descripcion</label>
+                    <br>
+                    <textarea name="descripcion" placeholder="Escriba la Descripción"></textarea>
+                </div>
+                <div class="section">
+                    <label>Precio</label>
+                    <br>
+                    <input type="number" name="precio" placeholder="Precio" required>
+                </div>
+                <div>
+                    <label>Categoria</label>
+                    <br>
+                    <input type="text" name="categoria" placeholder="Categoría" required>
+                </div>
+                <div>
+                    <label>Imagen URL</label>
+                    <br>
+                    <input type="url" name="imagen_url" placeholder="Imagen URL" required>
+                </div>
+                <div>
+                    <label>Fecha de publicación</label>
+                    <br>
+                    <input type="date" name="fecha_publicacion" placeholder="Fecha de publicación" required>
+                </div>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </fieldset>
+        </form>
+        
+    </main>
+</body>
+</html>

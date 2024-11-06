@@ -1,0 +1,66 @@
+<?php
+// Your code here!
+
+// Número del mes y el año ingresado
+$mes = 8;  // Ejemplo: 8 para Agosto
+$anio = 2024;  // Ejemplo: 2024
+
+// Determinar el nombre del mes
+switch($mes) {
+    case 1:
+        $nombreMes = "Enero";
+        break;
+    case 2:
+        $nombreMes = "Febrero";
+        break;
+    case 3:
+        $nombreMes = "Marzo";
+        break;
+    case 4:
+        $nombreMes = "Abril";
+        break;
+    case 5:
+        $nombreMes = "Mayo";
+        break;
+    case 6:
+        $nombreMes = "Junio";
+        break;
+    case 7:
+        $nombreMes = "Julio";
+        break;
+    case 8:
+        $nombreMes = "Agosto";
+        break;
+    case 9:
+        $nombreMes = "Septiembre";
+        break;
+    case 10:
+        $nombreMes = "Octubre";
+        break;
+    case 11:
+        $nombreMes = "Noviembre";
+        break;
+    case 12:
+        $nombreMes = "Diciembre";
+        break;
+    default:
+        $nombreMes = "Mes inválido";
+}
+
+// Determinar la cantidad de días en el mes y año ingresados
+if ($mes == 2) {
+    // Verificar si es año bisiesto
+    if (($anio % 4 == 0 && $anio % 100 != 0) || ($anio % 400 == 0)) {
+        $diasMes = 29;  // Febrero en año bisiesto
+    } else {
+        $diasMes = 28;  // Febrero en año no bisiesto
+    }
+} else {
+    // Meses con 30 o 31 días
+    $diasMes = ($mes == 4 || $mes == 6 || $mes == 9 || $mes == 11) ? 30 : 31;
+}
+
+// Mostrar resultados
+echo "El mes de $nombreMes del año $anio tiene $diasMes días.";
+
+?>
